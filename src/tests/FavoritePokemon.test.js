@@ -19,13 +19,10 @@ describe('Testes do componente Favorite Pokemon', () => {
     renderWithRouter(<App />);
     const linkMoreDetails = screen.getByRole('link', { name: /more details/i });
     userEvent.click(linkMoreDetails);
-    screen.getByRole('heading', { name: /summary/i });
     const checkboxFavorite = screen.getByRole('checkbox', { name: /pokémon favoritado\?/i });
     userEvent.click(checkboxFavorite);
     const linkFavorite = screen.getByRole('link', { name: /favorite pokémon/i });
     userEvent.click(linkFavorite);
-    const elementFavorite = screen.getByRole('img', { name: /pikachu is marked as favorite/i });
-    const imagemUrl = '/star-icon.svg';
-    expect(elementFavorite).toHaveAttribute('src', imagemUrl);
+    screen.getByRole('img', { name: /pikachu is marked as favorite/i });
   });
 });

@@ -14,6 +14,7 @@ describe('Testes do componente Not Found', () => {
     });
     screen.getByRole('heading', { name: /page requested not found/i });
   });
+
   test('Teste se a página mostra a imagem', () => {
     const { history } = renderWithRouter(<App />);
     const invalidaUrl = '/xablau';
