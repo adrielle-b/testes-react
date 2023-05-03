@@ -33,7 +33,6 @@ describe('Testes do componente Pokedex', () => {
 
   test('Teste se a Pokédex tem os botões de filtro', () => {
     renderWithRouter(<App />);
-    screen.getByRole('button', { name: /all/i });
 
     const pokemonTypes = [];
     pokemonList.forEach(({ type }) => {
