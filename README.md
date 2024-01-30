@@ -3,7 +3,7 @@
 </div>
 
 ## Descrição
-O projeto testa uma página web com conteúdo de Pokédex, uma enciclopédia digital. O foco do projeto está dentro da pasta tests/, onde foram desenvolvidos testes para todos os componentes dessa aplicação.
+O projeto testa uma página web com conteúdo de Pokédex. O foco do projeto está dentro da pasta /tests, onde foram desenvolvidos testes para todos os componentes dessa aplicação.
 
 ## Tecnologias utilizadas
 * Testing Library: Biblioteca para testar aplicações React. Ela foi projetada para facilitar a escrita de testes que refletem mais de perto o comportamento do usuário.
